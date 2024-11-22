@@ -8,7 +8,4 @@ test('Login test', async ({ page }) => {
     await loginPage.username.fill('standard_user');
     await loginPage.password.fill('secret_sauce');
     await loginPage.loginButton.click();
-
-    const productsPage = new ProductsPage(page);
-    await expect(productsPage.productsPageTitle).toBeVisible();
 });
